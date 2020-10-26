@@ -1,10 +1,11 @@
-import React, { Suspense, useEffect, useRef, useState } from "react";
-import { Animated, LayoutChangeEvent, Text, View } from "react-native";
+import React, { useEffect, useRef, useState } from "react";
+import { Animated, Text, View } from "react-native";
 import { useSelector } from "react-redux";
-import { ReduxState } from "../../store/types";
-import getColors from "../../utils/color";
-import { moderateScale } from "../../utils/scale";
-import { useColorScheme, Appearance } from "react-native-appearance";
+import { useColorScheme } from "react-native-appearance";
+
+import { ReduxState } from "store/types";
+import getColors from "utils/color";
+import { moderateScale } from "utils/scale";
 
 const AnimatedScore: React.FunctionComponent = () => {
   const colorScheme = useColorScheme();

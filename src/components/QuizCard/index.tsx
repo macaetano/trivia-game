@@ -1,11 +1,12 @@
 import React from "react";
 import { Text, View } from "react-native";
-import decodeHTMLEntities from "../../utils/decode";
-import Option from "../Option";
+import { useColorScheme, Appearance } from "react-native-appearance";
+
+import decodeHTMLEntities from "utils/decode";
+import Option from "components/Option";
 import styles from "./styles";
 import { Props } from "./types";
-import getColors from "./../../utils/color";
-import { useColorScheme, Appearance } from "react-native-appearance";
+import getColors from "utils/color";
 
 const QuizCard: React.FunctionComponent<Props> = ({
   currentAnswer,

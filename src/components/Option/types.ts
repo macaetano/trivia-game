@@ -1,4 +1,4 @@
-import { Answer } from "../../screens/Question";
+import { Answer } from "screens/Question";
 
 export interface Props {
   onSelectOption: () => void;

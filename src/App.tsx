@@ -1,15 +1,17 @@
 import React from "react";
-import { registerRootComponent } from "expo";
-import { Provider } from "react-redux";
-import store from "./store";
-import Navigation from "./navigation";
 import { SafeAreaView, StatusBar } from "react-native";
-import getColors from "./utils/color";
+import { registerRootComponent } from "expo";
 import {
   AppearanceProvider,
   Appearance,
   useColorScheme,
 } from "react-native-appearance";
+import { Provider } from "react-redux";
+
+import store from "store";
+import Navigation from "navigation";
+import getColors from "utils/color";
+
 Appearance.getColorScheme();
 
 const App: React.FunctionComponent = () => {

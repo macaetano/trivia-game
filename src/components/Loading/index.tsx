@@ -1,8 +1,9 @@
 import React from "react";
 import { ActivityIndicator } from "react-native";
+import { useColorScheme } from "react-native-appearance";
+
 import styles from "./style";
-import getColors from "./../../utils/color";
-import { useColorScheme, Appearance } from "react-native-appearance";
+import getColors from "utils/color";
 
 const Loading: React.FunctionComponent = () => {
   const colorScheme = useColorScheme();

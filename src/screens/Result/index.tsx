@@ -1,16 +1,16 @@
 import React from "react";
-import { FlatList, ScrollView, Text, View } from "react-native";
+import { FlatList, Text, View } from "react-native";
 import { useDispatch, useSelector } from "react-redux";
-import Button from "../../components/Button";
-import { clearAll } from "../../store/quiz/action-creators";
-import { Question } from "../../store/quiz/types";
-import { ReduxState } from "../../store/types";
-import { moderateScale } from "../../utils/scale";
+import { useColorScheme } from "react-native-appearance";
+
+import Button from "components/Button";
+import { Question } from "store/quiz/types";
+import { clearAll } from "store/quiz/action-creators";
+import { ReduxState } from "store/types";
 import Props from "./types";
-import decodeHTMLEntities from "./../../utils/decode";
+import decodeHTMLEntities from "utils/decode";
 import styles from "./styles";
-import getColors from "./../../utils/color";
-import { useColorScheme, Appearance } from "react-native-appearance";
+import getColors from "utils/color";
 
 const Result: React.FunctionComponent<Props> = ({ navigation }) => {
   const colorScheme = useColorScheme();

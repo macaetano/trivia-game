@@ -1,27 +1,22 @@
 import React, { useEffect, useRef, useState } from "react";
-
-// components
 import { Text, View } from "react-native";
-import AnimatedScore from "../../components/AnimatedScore/";
-import QuizCard from "./../../components/QuizCard";
-
-// utils
 import { useDispatch, useSelector } from "react-redux";
-import { moderateScale } from "../../utils/scale";
+import { useColorScheme, Appearance } from "react-native-appearance";
+
+import AnimatedScore from "components/AnimatedScore/";
+import QuizCard from "components/QuizCard";
+import { moderateScale } from "utils/scale";
 import {
   fetchQuestions,
   updateCurrentQuestion,
   updateScore,
-} from "../../store/quiz/action-creators";
+} from "store/quiz/action-creators";
 import styles from "./styles";
-
-// types
-import { ReduxState } from "../../store/types";
+import { ReduxState } from "store/types";
 import Props from "./types";
-import Button from "../../components/Button";
-import Loading from "../../components/Loading";
-import getColors from "./../../utils/color";
-import { useColorScheme, Appearance } from "react-native-appearance";
+import Button from "components/Button";
+import Loading from "components/Loading";
+import getColors from "utils/color";
 
 export type Answer = "True" | "False";
 

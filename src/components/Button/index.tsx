@@ -1,10 +1,10 @@
 import React from "react";
+import { Text, TouchableOpacity } from "react-native";
+import { useColorScheme } from "react-native-appearance";
 
 import { Props } from "./types";
 import styles from "./styles";
-import { Text, TouchableOpacity } from "react-native";
-import getColors from "./../../utils/color";
-import { useColorScheme, Appearance } from "react-native-appearance";
+import getColors from "utils/color";
 
 const Button: React.FunctionComponent<Props> = ({ title, onPress }) => {
   const colorScheme = useColorScheme();

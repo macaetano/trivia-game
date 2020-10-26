@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { moderateScale } from "../../utils/scale";
+import { moderateScale } from "utils/scale";
 
 const styles = StyleSheet.create({
   answerOption: {

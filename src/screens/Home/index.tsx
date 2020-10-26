@@ -1,10 +1,11 @@
 import React from "react";
 import { Text, View } from "react-native";
-import Button from "../../components/Button";
-import getColors from "../../utils/color";
 import { useColorScheme } from "react-native-appearance";
-import styles from "./styles";
+
 import Props from "./types";
+import Button from "components/Button";
+import getColors from "utils/color";
+import styles from "./styles";
 
 const Home: React.FunctionComponent<Props> = ({ navigation }) => {
   const colorScheme = useColorScheme();

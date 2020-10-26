@@ -1,5 +1,5 @@
 import { StackNavigationProp } from "@react-navigation/stack";
-import { RootStack } from "../../navigation/types";
+import { RootStack } from "navigation/types";
 
 type ProfileScreenNavigationProp = StackNavigationProp<RootStack, "Home">;
 
