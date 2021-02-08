@@ -6,6 +6,7 @@
 ## Tech Stack
 
 - [React Native](https://reactnative.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
 - [Expo](https://expo.io/)
 - [Redux](https://redux.js.org/)
 - [Redux Saga](https://redux-saga.js.org/)
